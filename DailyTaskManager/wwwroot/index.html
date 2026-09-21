@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>مدیریت وظایف روزانه</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>مدیریت وظایف روزانه</h1>
+    </header>
+
+    <main>
+
+        <section class="toolbar">
+
+            <button id="createTaskButton">
+                + ایجاد وظیفه
+            </button>
+
+            <input type="text"
+                   id="taskSearch"
+                   placeholder="جستجو بر اساس عنوان...">
+
+            <select id="taskFilter">
+                <option value="">همه وظایف</option>
+                <option value="true">انجام شده</option>
+                <option value="false">انجام نشده</option>
+            </select>
+            <select id="taskSort">
+                <option value="newest">جدیدترین</option>
+                <option value="oldest">قدیمی‌ترین</option>
+                <option value="priority">اولویت بالا به پایین</option>
+                <option value="priorityAsc">اولویت پایین به بالا</option>
+                <option value="dueDate">نزدیک‌ترین تاریخ</option>
+            </select>
+
+        </section>
+
+
+        <section id="createTaskForm" class="create-task-form">
+
+            <h2>ایجاد وظیفه جدید</h2>
+
+            <input type="text"
+                   id="taskTitle"
+                   placeholder="عنوان وظیفه">
+
+            <textarea id="taskDescription"
+                      placeholder="توضیحات وظیفه"></textarea>
+
+            <select id="taskPriority">
+                <option value="Low">کم</option>
+                <option value="Medium" selected>متوسط</option>
+                <option value="High">زیاد</option>
+            </select>
+
+            <input type="datetime-local"
+                   id="taskDueDate">
+
+            <div>
+                <button id="saveTaskButton">
+                    ذخیره وظیفه
+                </button>
+
+                <button id="cancelTaskButton"
+                        type="button">
+                    انصراف
+                </button>
+            </div>
+
+        </section>
+
+
+        <section id="editTaskForm" class="edit-task-form">
+
+            <h2>ویرایش وظیفه</h2>
+
+            <input type="text"
+                   id="editTaskTitle"
+                   placeholder="عنوان وظیفه">
+
+            <textarea id="editTaskDescription"
+                      placeholder="توضیحات وظیفه"></textarea>
+
+            <select id="editTaskPriority">
+                <option value="Low">کم</option>
+                <option value="Medium">متوسط</option>
+                <option value="High">زیاد</option>
+            </select>
+
+            <label>
+                <input type="checkbox" id="editTaskIsCompleted">
+                انجام شده
+            </label>
+
+            <input type="datetime-local"
+                   id="editTaskDueDate">
+
+            <div>
+                <button id="updateTaskButton">
+                    ذخیره تغییرات
+                </button>
+
+                <button id="cancelEditTaskButton"
+                        type="button">
+                    انصراف
+                </button>
+            </div>
+
+        </section>
+
+        <section id="taskList">
+        </section>
+        <section id="taskList">
+            <div id="pagination" class="pagination">
+                <button id="prevPage">قبلی</button>
+                <span id="pageInfo"></span>
+                <button id="nextPage">بعدی</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

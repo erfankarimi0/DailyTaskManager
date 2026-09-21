@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37614.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyTaskManager", "DailyTaskManager\DailyTaskManager.csproj", "{3C349A6C-9DDB-45B3-B5CD-AC635BBA8E82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyTaskManagerTests", "DailyTaskManagerTests\DailyTaskManagerTests.csproj", "{429372CB-D3EE-4BB5-97B7-F9A3477A7AEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C349A6C-9DDB-45B3-B5CD-AC635BBA8E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C349A6C-9DDB-45B3-B5CD-AC635BBA8E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C349A6C-9DDB-45B3-B5CD-AC635BBA8E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C349A6C-9DDB-45B3-B5CD-AC635BBA8E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{429372CB-D3EE-4BB5-97B7-F9A3477A7AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{429372CB-D3EE-4BB5-97B7-F9A3477A7AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{429372CB-D3EE-4BB5-97B7-F9A3477A7AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{429372CB-D3EE-4BB5-97B7-F9A3477A7AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D282D445-367F-4E44-8B23-CFE31566CEEC}
+	EndGlobalSection
+EndGlobal

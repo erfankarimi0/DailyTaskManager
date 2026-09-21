@@ -1,0 +1,6 @@
+@DailyTaskManager_HostAddress = http://localhost:5287
+
+GET {{DailyTaskManager_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
